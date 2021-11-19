@@ -27,4 +27,4 @@ def longestConsecutive(nums):
 
 
 nums = [7, -9, 3, -6, 3, 5, 3, 6, -2, -5, 8, 6, -4, -6, -4, -4, 5, -9, 2, 7, 0, 0]
-print(longestConsecutive(nums))
+longestConsecutive(nums)
