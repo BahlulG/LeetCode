@@ -31,4 +31,4 @@ def minMeetingRooms(intervals):
 
 
 intervals = [[0, 30], [5, 10], [15, 20]]
-print(minMeetingRooms(intervals))
+minMeetingRooms(intervals)
