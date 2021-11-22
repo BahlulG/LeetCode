@@ -25,4 +25,4 @@ def findOriginalArray(changed):
 
 array = [1, 3, 4, 2, 6, 8]
 
-print(findOriginalArray(array))
+findOriginalArray(array)
