@@ -15,4 +15,4 @@ def groupAnagrams(strs):
 
 a = ["eat", "tea", "tan", "ate", "nat", "bat"]
 
-print(groupAnagrams(a))
+groupAnagrams(a)
