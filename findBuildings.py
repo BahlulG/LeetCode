@@ -13,7 +13,9 @@ def findBuildings(heights):
             max_height = heights[height]
 
     return reversed(stack)
-
+    # Because of we are looping from end to the beginnign of the list,
+    # "stack.append(height)" also happens in reverse order.
+    # In order to return the "stack" in correct order, we have to reverse it
 
 heights = [4, 2, 3, 1]
 findBuildings(heights)
