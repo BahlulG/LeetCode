@@ -50,4 +50,4 @@ def checkValidString(s):
 
 
 s = "(*)"
-print(checkValidString(s))
+checkValidString(s)
