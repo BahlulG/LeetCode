@@ -28,7 +28,16 @@ def checkValidString(s):
     if stack_brackets and stack_star:
     # Here if 'stack_brackets' and 'stack_star' is not empty,
     # if index of star higher than open bracket, then pop from both of the stacks
+        # It means, star is after the openening bracket
+        # because star turns to closing bracket, we delete full bracket
+        # idx: 1 4 == 1 4
+        # val: ( * == ( )
     # if index of star lower than open bracket, then pop from star_stack
+        # Because star falls behind the opening bracket, if it turns to closing bracket
+        # it doesn't change anything
+        # idx: 1 4 == 1 4
+        # val: * ( == ) (
+        
         while stack_brackets and stack_star:
             if stack_brackets[0] < stack_star[0]:
                 stack_brackets.pop(0)
