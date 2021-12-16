@@ -14,13 +14,13 @@ class Solution:
                 return
 
             dic[(abs(node.val - target))] = node.val
-            # Add every 'Node - Target' value to the dictionary as a key, Node Value as a value
+            # Step 1: Add every 'Node - Target = value' to the dictionary as a key, Node Value as a value
 
             return (find_min(node.right, lst)) or (find_min(node.left, lst))
-            # Repeat it for Left and Right Subtree of the Root Node
+            # Repeat the Step 1 for Left and Right Subtree of the Root Node
 
         find_min(root, dic)
         # Run above created 'find_min' function
 
         return dic[min(dic.keys())]
-        # Return the value of Minimum Value's key from dictionary
+        # Return the value of Minimum Value's Key from dictionary
