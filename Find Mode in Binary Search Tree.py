@@ -32,6 +32,6 @@ class Solution:
                 # If the above Dictionary Value equals to Maximum number:
 
                 answer.append(key)
-                # Append the Key of Maximum Value to Answer array
+                # Append the Key of Maximum Value to the Answer array
 
         return answer
